@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <!-- Vùng bấm to hơn cho nút back -->
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="20dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Quay lại"
+                android:tint="#1565C0" />
+        </FrameLayout>
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quản lý thư viện"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Ô nhập tên sinh viên -->
+    <EditText
+        android:id="@+id/txtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sinh viên"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp" />
+
+    <!-- Nút đổi tên -->
+    <Button
+        android:id="@+id/btnChange"
+        android:text="Thay đổi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1565C0"
+        android:textColor="#FFFFFF" />
+
+    <!-- Thanh tìm kiếm -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm sách..."
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp" />
+
+    <!-- Danh sách sách -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/bookList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Nút thêm -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="Thêm sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

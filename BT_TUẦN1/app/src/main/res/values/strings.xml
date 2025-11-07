@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProfileApp</string>
+    <string name="name_my_duyen">Mỹ Duyên</string>
+    <string name="location_binh_dinh">Bình Định, Việt Nam</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_edit">Chỉnh sửa</string>
+</resources>
