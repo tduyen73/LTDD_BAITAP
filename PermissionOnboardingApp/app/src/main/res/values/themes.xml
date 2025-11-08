@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Theme chính của app -->
+    <style name="Theme.PermissionOnboardingApp" parent="Theme.Material3.Light">
+        <!-- Màu nền trắng, giao diện sáng -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+
+</resources>
